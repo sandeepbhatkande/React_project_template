@@ -1,0 +1,3 @@
+export const QUERY_DATA_CONSTANT = {
+    GET_QUERY_DATA : 'GET_QUERY_DATA'
+};

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QueryDataView render QueryData component render 1`] = `
+<div
+  className="login_cnt"
+>
+  <img
+    alt="login"
+    className="loginbg"
+    src="images/login.png"
+  />
+  <div
+    className="login_detail_cnt"
+  >
+    <div
+      className="label bold"
+    >
+      Story Mapping
+    </div>
+    <br />
+    <input
+      id="username"
+      placeholder="Login Id"
+      type="text"
+    />
+    <br />
+    <input
+      id="password"
+      placeholder="password"
+      type="password"
+    />
+    <br />
+    <input
+      id="login"
+      onClick={[Function]}
+      type="button"
+      value="Login"
+    />
+  </div>
+</div>
+`;

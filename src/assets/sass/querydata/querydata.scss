@@ -1,0 +1,210 @@
+.query_data_cnt {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+
+    background: {
+        color: #e6e6e6;
+    }
+
+    .qbg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #ffffff;
+        opacity: 1; /* Firefox */
+    }
+      
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #ffffff;
+    }
+      
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #ffffff;
+    }
+
+    .query_cnt {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        padding: 10px;
+        height: 171px;
+        width: 60%;
+
+        .query {
+            outline: none;
+            height: 100%;
+            width: calc(100% - 125px);
+            color: #ffffff;
+            border: 1px solid #a3a3a3;
+            padding: 5px;
+            background: transparent;
+            resize: none;
+            float: left;
+
+            border: {
+                left: 0px;
+                right: 0px;
+                top: 0px;
+            }
+
+            font: {
+                size: 16px;
+            }
+        }
+
+        .query:focus {
+            border-bottom-color: #7fc9ce;
+        }
+
+        .btn_cnt {
+            width: 122px;
+            float: right;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .btn {
+                background: transparent;
+                color: #ffffff;
+                border: 1px solid #ffffff;
+                border-radius: 3px;
+                padding: 5px;
+                outline: none;
+                width: 100%;
+    
+                font: {
+                    size: 16px;
+                }
+            }
+
+            .btn:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .query_info {
+        position: absolute;
+        right: 0px;
+        width: calc(40% - 40px);
+        height: 171px;
+        z-index: 2;
+        padding: 10px;
+        color: #ffffff;
+
+        label {
+            color: #ffffff;
+        }
+    }
+
+    #query_data_scroll_cnt {
+        top: 172px;
+        z-index: 2;
+
+        .query_data {
+            height: 100%;
+            width: 100%;
+            
+            color: #ffffff;
+    
+            li {
+                padding: 10px;
+                
+                .index {
+                    font: {
+                        weight: bold;
+                        size: 16px;
+                    }
+                }
+            }
+        }
+
+        div:nth-child(2) div, div:nth-child(3) div {
+            background: {
+                color: #ffffff !important;
+            }
+        }
+    }
+}
+
+.login_cnt {
+    width: 100%;
+    height: 100%;
+
+    .loginbg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login_detail_cnt {
+        height: 65%;
+        width: 25%;
+        position: absolute;
+        top: 17.5%;
+        left: 100px;
+        z-index: 2;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 5px #dad5d5;
+        
+        text: {
+            align: center;
+        }
+
+        background: {
+            color: #ffffff;
+        }
+
+        .label {
+            margin-top: 10%;
+            color: rgba(0, 0, 0, 0.6);
+            font: {
+                size: 20px;
+            }
+        }
+
+        #username, #password {
+            width: 50%;
+            height: 40px;
+            border: 0px;
+            border-bottom: 1px solid #a3a3a3;
+            margin-top: 10%;
+            outline: none;
+
+            font: {
+                size: 14px;
+            }
+        }
+
+        #login {
+            border: 1px solid #155c84;
+            color: #ffff;
+            padding: inherit;
+            height: 26px;
+            width: 100px;
+            border-radius: 3px;
+            margin-top: 12%;
+            cursor: pointer;
+
+            background: {
+                color: #155c84;
+            }
+        }
+
+        input:-webkit-autofill,
+        #username:-webkit-autofill:hover, 
+        #username:-webkit-autofill:focus, 
+        #username:-webkit-autofill:active  {
+            -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+        }
+    }
+}
